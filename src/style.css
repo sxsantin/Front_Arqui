@@ -1,0 +1,146 @@
+/* General */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#main-container,
+.container {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tema oscuro */
+body.dark {
+  background-color: #121212 !important;
+  color: #e0e0e0;
+}
+
+body.dark .container {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Encabezados */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #dc3545;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+/* Lista de libros */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+body.dark .list-group-item {
+  background-color: #2a2a2a;
+  color: #ddd;
+  border-color: #444;
+}
+
+/* Iconos de acciones */
+.list-group-item .acciones i {
+  margin-left: 12px;
+  cursor: pointer;
+  color: #dc3545;
+  transition: color 0.2s ease;
+}
+
+.list-group-item .acciones i:hover {
+  color: #ff6666;
+}
+
+/* Botón de tema */
+#theme-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle:hover {
+  background-color: #b52a3a;
+}
+
+#theme-toggle.rotate {
+  transform: rotate(180deg);
+}
+
+/* Mensaje */
+#mensaje {
+  min-height: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Validación */
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.was-validated .form-control:valid {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ocultar formularios */
+form[style*="display:none"] {
+  display: none !important;
+}
+
+/* Inputs grandes */
+.form-control-lg {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Botones grandes */
+.btn-lg {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+  border: none;
+  color: #dc3545;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 0.5rem;
+}
